@@ -49,7 +49,7 @@ class App extends React.Component {
   }
 
   myfunction = event => {
-    alert("hello")
+    console.log(event.target.value)
   }
 
   render() {
