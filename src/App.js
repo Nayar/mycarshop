@@ -41,12 +41,19 @@ const listCars = [
 ]
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      filter : "peugeot"
+    }
+  }
   render() {
     return (
       <div>
         <h1>This is my App.js</h1>
+        <h2>We currently have filter "{this.state.filter}"</h2>
         <SearchCar/>
-        <ListCars cars={listCars}/>
+        <ListCars cars={listCars} filter={this.state.filter}/>
       </div>
     )
   }
