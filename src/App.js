@@ -1,6 +1,7 @@
 import React from "react"
 import ListCars from "./ListCars"
 import SearchCar from "./SearchCar"
+import SearchCarSelect from "./SearchCarSelect"
 
 const listCars = [
   {
@@ -63,6 +64,7 @@ class App extends React.Component {
         <input onChange={this.myfunction} placeholder="test"/>
         <h2>We currently have filter "{this.state.filter}"</h2>
         <SearchCar onChange={this.myfunction}/>
+        <SearchCarSelect/>
         <ListCars cars={listCars} filter={this.state.filter}/>
       </div>
     )
