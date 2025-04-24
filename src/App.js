@@ -44,7 +44,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>This is my App.js</h1>
-        <ListCars/>
+        <ListCars cars={listCars}/>
       </div>
     )
   }
