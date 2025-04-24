@@ -1,5 +1,6 @@
 import React from "react"
 import ListCars from "./ListCars"
+import SearchCar from "./SearchCar"
 
 const listCars = [
   {
@@ -44,6 +45,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>This is my App.js</h1>
+        <SearchCar/>
         <ListCars cars={listCars}/>
       </div>
     )
