@@ -69,6 +69,7 @@ class App extends React.Component {
           <SearchCarSelect cars={listCars} onChange={this.myfunction}/>
           <ListCars cars={listCars} filter={this.state.filter}/>
         </ErrorBoundary>
+        
       </div>
     )
   }
