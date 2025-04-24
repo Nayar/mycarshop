@@ -3,6 +3,7 @@ import ListCars from "./ListCars"
 import SearchCar from "./SearchCar"
 import SearchCarSelect from "./SearchCarSelect"
 import ErrorBoundary from "./ErrorBoundary"
+import Form from "./Form"
 
 const listCars = [
   {
@@ -61,15 +62,16 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>This is my App.js</h1>
+        {/* <h1>This is my App.js</h1>
         <input onChange={this.myfunction} placeholder="test"/>
         <ErrorBoundary>
           <h2>We currently have filter "{this.state.filter}"</h2>
           <SearchCar onChange={this.myfunction}/>
           <SearchCarSelect cars={listCars} onChange={this.myfunction}/>
           <ListCars cars={listCars} filter={this.state.filter}/>
-        </ErrorBoundary>
-        
+
+        </ErrorBoundary> */}
+        <Form></Form>
       </div>
     )
   }
