@@ -47,12 +47,18 @@ class App extends React.Component {
       filter : "ford"
     }
   }
+
+  myfunction = event => {
+    alert("hello")
+  }
+
   render() {
     return (
       <div>
         <h1>This is my App.js</h1>
+        <input onChange={this.myfunction} placeholder="test"/>
         <h2>We currently have filter "{this.state.filter}"</h2>
-        <SearchCar/>
+        <SearchCar onChange={this.myfunction}/>
         <ListCars cars={listCars} filter={this.state.filter}/>
       </div>
     )
