@@ -64,7 +64,7 @@ class App extends React.Component {
         <input onChange={this.myfunction} placeholder="test"/>
         <h2>We currently have filter "{this.state.filter}"</h2>
         <SearchCar onChange={this.myfunction}/>
-        <SearchCarSelect/>
+        <SearchCarSelect cars={listCars} onChange={this.myfunction}/>
         <ListCars cars={listCars} filter={this.state.filter}/>
       </div>
     )
