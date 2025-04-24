@@ -51,7 +51,9 @@ class App extends React.Component {
   myfunction = event => {
     console.log(event.target.value)
     // write code to change the state "filter"
-    
+    this.setState({
+      filter: event.target.value
+    })
   }
 
   render() {
